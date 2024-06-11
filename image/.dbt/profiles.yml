@@ -1,0 +1,11 @@
+sample_project:
+  outputs:
+    dev:
+      catalog: 
+      host: 
+      http_path: 
+      schema: tmp
+      threads: 1
+      token: 
+      type: databricks
+  target: dev

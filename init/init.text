@@ -1,0 +1,23 @@
+docker ps
+
+docker exec -it dbt /bin/sh
+
+dbt init sample_project
+
+docker cp dbt:/root/.dbt /usr/data_archt/dbt/dbt_init/.dbt
+
+docker cp dbt:/app/sample_project /usr/data_archt/dbt/dbt_init/sample_project
+
+# mv /usr/data_archt/dbt/dbt_init/.dbt /usr/data_archt/dbt/image/.dbt
+
+# mv /usr/data_archt/dbt/dbt_init/sample_project /usr/data_archt/dbt/image/sample_project
+
+# rebuild dbt container
+
+docker exec -it dbt /bin/sh
+
+cd sample_project
+
+dbt debug
+
+dbt run
