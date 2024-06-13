@@ -1,0 +1,23 @@
+sample_project:
+  target: test
+  outputs:
+    # Databricks 配置
+    databricks_test:
+      catalog: 
+      host: 
+      http_path: 
+      schema: tmp
+      threads: 1
+      token: 
+      type: databricks
+
+    # PostgreSQL 配置
+    postgres_test:
+      type: postgres
+      host: postgres
+      user: postgres
+      pass: Aa123456
+      port: 5432
+      dbname: postgres
+      schema: public
+      threads: 1

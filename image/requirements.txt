@@ -1,0 +1,3 @@
+dbt-core==1.7.16
+dbt-postgres==1.7.16
+dbt-bigquery==1.7.9
