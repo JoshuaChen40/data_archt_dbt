@@ -22,8 +22,6 @@ with source_data as (
     select 4 as id, 'James' AS name
     union all
     select 4 as id, 'Jack' AS name
-    union all
-    select 4 as id, 'Jack' AS name
 
 )
 
