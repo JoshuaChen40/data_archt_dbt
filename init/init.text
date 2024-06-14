@@ -23,3 +23,7 @@ dbt debug --target postgres_test
 dbt run --target postgres_test
 
 dbt test --target postgres_test
+
+dbt docs generate --target postgres_test
+
+dbt docs serve --target postgres_test
