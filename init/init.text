@@ -21,3 +21,5 @@ cd sample_project
 dbt debug --target postgres_test
 
 dbt run --target postgres_test
+
+dbt test --target postgres_test
