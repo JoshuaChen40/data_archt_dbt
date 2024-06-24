@@ -14,4 +14,4 @@ RUN pip install --no-cache-dir -r /app/requirements.txt
 ENV DBT_PROFILES_DIR=/app/.dbt
 
 # 維持容器持續運行的命令
-CMD ["tail", "-f", "/dev/null"]
+# CMD ["tail", "-f", "/dev/null"]
